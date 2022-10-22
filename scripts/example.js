@@ -18,20 +18,20 @@ const sendMessages = (message, phoneNumber) => {
 
 const example = () => {
     // useful resource: https://crontab.guru/
-    const second = '5,10,15,20,25,30,35,40,45,50,55,59' // optional
+    const second = '0,5,10,15,20,25,30,35,40,45,50,55' // optional
     const minute = '*'
     const hours = '*'
     const dayOfMoth = '*'
     const month = '*'
     const weekDay = '*'
     
-    const messages = ['Estos mensajes se envian automaticamente cada 5 segundos', 'Yo solamente corri un comandito en la consola y puedo hacer que esto dure infinitamente', 'Capaz estas ocupada pero yo te voy a molestar un ratito', 'No me bloquees, es solo para mostrarte que si funciona', 'te puedo enviar esto infinitamente sin hacer nada', 'escribime a mi celu y lo corto', 'No se si esto ya lo escribi pero los mensajes se mandan aleatoreamente asi que puede que se repitan', 'Es bastante boludo pero esta bueno']
+    const messages = ['test message 1', 'test message 2', 'test message 3', 'test message 4', 'test message 5', 'test message 6']
     // envia un mensaje cada 5 segundos (es simil cron, pero no es cron porque permite agregar segundos) 
     const job = schedule.scheduleJob(`${second ? second + ' ' : null}${minute} ${hours} ${dayOfMoth} ${month} ${weekDay}`, ()=>{ 
         // ingresa aun index random del array para seleccionar un mesanje diferente cada vez que se ejecuta
         const randomMessage = messages[Math.floor((Math.random()* messages.length))]
         //envia un mensaje a un numero de telefono
-        sendMessages(randomMessage, 1122527572)
+        sendMessages(randomMessage, 3585268935)
     })
 }
 
