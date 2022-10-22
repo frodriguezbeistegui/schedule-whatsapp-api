@@ -31,7 +31,7 @@ const example = () => {
         // ingresa aun index random del array para seleccionar un mesanje diferente cada vez que se ejecuta
         const randomMessage = messages[Math.floor((Math.random()* messages.length))]
         //envia un mensaje a un numero de telefono
-        sendMessages(randomMessage, 1122527572)
+        sendMessages(randomMessage, 1111111111)
     })
 }
 
