@@ -55,7 +55,7 @@ const randomInArray = ({messagesArr, phoneNumber, cronConf}) => {
 
 // singleMessage({
 //   message: 'Que onda martin',
-//   phoneNumber: 3517452200, 
+//   phoneNumber: 1111111111, 
 //   cronConf: {
 //     // useful resource: https://crontab.guru/
 //     hours: '*',
@@ -81,7 +81,7 @@ const randomInArray = ({messagesArr, phoneNumber, cronConf}) => {
 // }}
 // )
 multipleMessages({messagesArr: ['test message 1', 'test message 2', 'test message 3', 'test message 4', 'test message 5', 'test message 6'],
-phoneNumber: 3517452200,
+phoneNumber: 11111,
 cronConf: {
   // useful resource: https://crontab.guru/
   second: '0,5,10,15,20,25,30,35,40,45,50,55', // optional
