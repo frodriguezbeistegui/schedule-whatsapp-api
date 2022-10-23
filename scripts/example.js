@@ -54,7 +54,7 @@ const randomInArray = ({messagesArr, phoneNumber, cronConf}) => {
   // EXECUTIONS
 
 // singleMessage({
-//   message: 'Que onda martin',
+//   message: 'test message',
 //   phoneNumber: 1111111111, 
 //   cronConf: {
 //     // useful resource: https://crontab.guru/
